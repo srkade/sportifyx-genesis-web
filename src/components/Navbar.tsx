@@ -23,8 +23,8 @@ const Navbar = () => {
               <Trophy className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">NextGen Sports</h1>
-              <p className="text-xs text-muted-foreground">SportifyX</p>
+              <h1 className="text-xl font-bold text-foreground"> SportifyX</h1>
+              <p className="text-xs text-muted-foreground">NextGen Sports</p>
             </div>
           </div>
 
