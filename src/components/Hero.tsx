@@ -27,15 +27,15 @@ const Hero = () => {
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-hero bg-clip-text text-transparent">
-                NextGen
+                SportifyX
               </span>
               <br />
-              <span className="text-foreground">Sports Excellence</span>
+              <span className="text-foreground">Champion's Next Level</span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
               Redefining Sports Culture in Tier I & II Cities through comprehensive training, 
               grassroots development, and professional sports management.
             </p>
@@ -53,18 +53,18 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-3 sm:gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary mb-1">15+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary mb-1">6-7</div>
-                <div className="text-sm text-muted-foreground">Expert Partners</div>
+                <div className="text-2xl sm:text-3xl font-bold text-secondary mb-1">6-7</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Expert Partners</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-1">1000+</div>
-                <div className="text-sm text-muted-foreground">Athletes Trained</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent mb-1">1000+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground">Athletes Trained</div>
               </div>
             </div>
           </div>
