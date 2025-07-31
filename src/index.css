@@ -38,10 +38,11 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 217 91% 60%;
 
-    /* Sports Gradients */
+    /* SportifyX Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-wavy: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 30%, hsl(var(--secondary)) 60%, hsl(var(--primary)) 100%);
     
     /* Sports Shadows */
     --shadow-sport: 0 10px 40px -15px hsl(var(--primary) / 0.3);
