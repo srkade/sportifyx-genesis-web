@@ -32,7 +32,7 @@ const Hero = () => {
                 SportifyX
               </span>
               <br />
-              <span className="text-foreground">Champion's Next Level</span>
+              <span className="text-foreground">Champion's Level</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">

@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground"> SportifyX</h1>
-              <p className="text-xs text-muted-foreground">NextGen Sports</p>
+              <p className="text-xs text-muted-foreground">Sports Excellence</p>
             </div>
           </div>
 
@@ -43,12 +43,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="hero" size="sm">
-              Join Now
-            </Button>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -77,11 +71,6 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <div className="pt-4 pb-2">
-              <Button variant="hero" size="sm" className="w-full">
-                Join Now
-              </Button>
-            </div>
           </div>
         </div>
       )}

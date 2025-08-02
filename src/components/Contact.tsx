@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["hello@nextgensports.com", "sportifyxevents@gmail.com"],
+      details: ["hello@sportifyx.com", "sportifyxevents@gmail.com"],
       color: "primary"
     },
     {
@@ -78,7 +78,7 @@ const Contact = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-foreground">Contact </span>
-            <span className="bg-gradient-hero bg-clip-text text-transparent">NextGen Sports</span>
+            <span className="bg-gradient-hero bg-clip-text text-transparent">SportifyX</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to start your sports journey? Get in touch with our team to learn more about our programs and services.

@@ -38,8 +38,8 @@ const Footer = () => {
                 <Trophy className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h1 className="text-xl font-bold">NextGen Sports</h1>
-                <p className="text-xs opacity-80">SportifyX</p>
+                <h1 className="text-xl font-bold">SportifyX</h1>
+                <p className="text-xs opacity-80">Sports Excellence</p>
               </div>
             </div>
             <p className="text-background/80 mb-6 leading-relaxed">
@@ -109,7 +109,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-background/80 flex-shrink-0" />
                 <div>
-                  <p className="text-background/80">hello@nextgensports.com</p>
+                  <p className="text-background/80">hello@sportifyx.com</p>
                   <p className="text-background/80">sportifyxevents@gmail.com</p>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="py-6 border-t border-background/20">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-background/60">
             <p>
-              © 2024 NextGen Sports (SportifyX). All rights reserved.
+              © 2024 SportifyX. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-background/80 transition-colors">

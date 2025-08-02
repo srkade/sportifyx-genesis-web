@@ -31,28 +31,42 @@ const Gallery = () => {
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800",
-      alt: "Sports Event",
-      category: "Events",
-      title: "Corporate Sports Day"
+      src: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800",
+      alt: "Basketball Training",
+      category: "Basketball",
+      title: "Basketball Skills Training"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800",
-      alt: "Training Facility",
-      category: "Facilities",
-      title: "Modern Training Ground"
+      src: "https://images.unsplash.com/photo-1593341646782-e0763dd20402?w=800",
+      alt: "Football Match",
+      category: "Football",
+      title: "Football Championship"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1592656094267-764a45160876?w=800",
-      alt: "Award Ceremony",
-      category: "Awards",
-      title: "Achievement Recognition"
+      src: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+      alt: "Cricket Match",
+      category: "Cricket",
+      title: "Cricket Tournament"
+    },
+    {
+      id: 7,
+      src: "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800",
+      alt: "Badminton Match",
+      category: "Badminton",
+      title: "Badminton Competition"
+    },
+    {
+      id: 8,
+      src: "https://images.unsplash.com/photo-1574623452334-1e0ac2b3ccb4?w=800",
+      alt: "Basketball Game",
+      category: "Basketball",
+      title: "Basketball Championship"
     }
   ];
 
-  const categories = ["All", "Football", "Cricket", "Badminton", "Events", "Facilities", "Awards"];
+  const categories = ["All", "Football", "Cricket", "Badminton", "Basketball"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredImages = activeCategory === "All" 

@@ -26,7 +26,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block bg-gradient-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            About NextGen Sports
+            About SportifyX
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-hero bg-clip-text text-transparent">Transforming</span>
@@ -44,7 +44,7 @@ const About = () => {
             <h3 className="text-2xl font-bold mb-6 text-foreground">Executive Summary</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                NextGen Sports (SportifyX) stands at the forefront of sports development, 
+                SportifyX stands at the forefront of sports development, 
                 bridging the gap between grassroots talent and professional excellence. 
                 Our comprehensive approach combines traditional coaching methodologies 
                 with modern sports science.
