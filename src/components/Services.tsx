@@ -88,11 +88,11 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 relative overflow-hidden">
-      {/* Wavy Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-wavy opacity-95">
+    <section id="services" className="py-20 bg-gradient-services relative overflow-hidden">
+      {/* Decorative Wave Pattern */}
+      <div className="absolute inset-0 opacity-30">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.05' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,133.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E")`,
           backgroundSize: 'cover',
           backgroundPosition: 'bottom'
         }}>
@@ -103,21 +103,21 @@ const Services = () => {
         {/* Business Verticals */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <span className="inline-block bg-white/90 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm">
+            <span className="inline-block bg-primary/90 text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm">
               Our Services
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white drop-shadow-lg">Business </span>
-              <span className="text-white drop-shadow-lg">Verticals</span>
+              <span className="text-foreground">Business </span>
+              <span className="bg-gradient-hero bg-clip-text text-transparent">Verticals</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive sports solutions spanning coaching, events, and competitive programs
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {businessVerticals.map((vertical, index) => (
-              <Card key={index} className="bg-white/95 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+              <Card key={index} className="bg-card/95 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
                 <CardHeader className="text-center">
                   <div className={`w-16 h-16 rounded-full bg-${vertical.color}/10 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform`}>
                     <vertical.icon className={`h-8 w-8 text-${vertical.color}`} />
@@ -146,21 +146,21 @@ const Services = () => {
         {/* Preferred Things */}
         <div>
           <div className="text-center mb-16">
-            <span className="inline-block bg-white/90 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm">
+            <span className="inline-block bg-secondary/90 text-secondary-foreground px-4 py-2 rounded-full text-sm font-semibold mb-4 shadow-lg backdrop-blur-sm">
               What We Value
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white drop-shadow-lg">Our </span>
-              <span className="text-white drop-shadow-lg">Preferred Things</span>
+              <span className="text-foreground">Our </span>
+              <span className="bg-gradient-hero bg-clip-text text-transparent">Preferred Things</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               The values and principles that drive our passion for sports excellence
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {preferredThings.map((section, index) => (
-              <Card key={index} className="bg-white/95 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <Card key={index} className="bg-card/95 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 <CardHeader className="text-center pb-4">
                   <div className={`w-12 h-12 rounded-full bg-${section.color}/10 flex items-center justify-center mx-auto mb-3`}>
                     <section.icon className={`h-6 w-6 text-${section.color}`} />

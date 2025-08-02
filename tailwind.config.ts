@@ -68,7 +68,12 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-wavy': 'var(--gradient-wavy)'
+				'gradient-wavy': 'var(--gradient-wavy)',
+				'gradient-about': 'var(--gradient-about)',
+				'gradient-services': 'var(--gradient-services)',
+				'gradient-gallery': 'var(--gradient-gallery)',
+				'gradient-contact': 'var(--gradient-contact)',
+				'gradient-footer': 'var(--gradient-footer)'
 			},
 			boxShadow: {
 				'sport': 'var(--shadow-sport)',
