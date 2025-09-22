@@ -33,8 +33,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/1ZWzo9G6D5/?mibextid=qi2Omg', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/sportifyxevents?igsh=c2cydHZ5N3loM2Nu&utm_source=qr', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
     { icon: Youtube, href: '#', label: 'YouTube' },
   ];
@@ -68,7 +68,12 @@ const Footer = () => {
                   className="text-background/80 hover:text-background hover:bg-background/10"
                   asChild
                 >
-                  <a href={social.href} aria-label={social.label}>
+                  <a 
+                    href={social.href} 
+                    aria-label={social.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <social.icon className="h-5 w-5" />
                   </a>
                 </Button>
@@ -114,24 +119,56 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-background/80 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-background/80">Kharadi, Pune</p>
-                  <p className="text-background/80">Maharashtra, India</p>
+                  <a 
+                    href="https://maps.google.com/?q=Kharadi,+Pune,+Maharashtra,+India"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-background/80 hover:text-background transition-colors duration-200"
+                    aria-label="View location on Google Maps"
+                  >
+                    <p>Kharadi, Pune</p>
+                    <p>Maharashtra, India</p>
+                  </a>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-background/80 flex-shrink-0" />
-                <div>
-                  <p className="text-background/80">hello@sportifyx.com</p>
-                  <p className="text-background/80">sportifyxevents@gmail.com</p>
+                <div className="space-y-1">
+                  <a 
+                    href="mailto:hello@sportifyx.com"
+                    className="text-background/80 hover:text-background transition-colors duration-200 block"
+                    aria-label="Send email to hello@sportifyx.com"
+                  >
+                    hello@sportifyx.com
+                  </a>
+                  <a 
+                    href="mailto:sportifyxevents@gmail.com"
+                    className="text-background/80 hover:text-background transition-colors duration-200 block"
+                    aria-label="Send email to sportifyxevents@gmail.com"
+                  >
+                    sportifyxevents@gmail.com
+                  </a>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-background/80 flex-shrink-0" />
-                <div>
-                  <p className="text-background/80">+91 98765 43210</p>
-                  <p className="text-background/80">+91 87654 32109</p>
+                <div className="space-y-1">
+                  <a 
+                    href="tel:+919876543210"
+                    className="text-background/80 hover:text-background transition-colors duration-200 block"
+                    aria-label="Call +91 98765 43210"
+                  >
+                    +91 98765 43210
+                  </a>
+                  <a 
+                    href="tel:+918765432109"
+                    className="text-background/80 hover:text-background transition-colors duration-200 block"
+                    aria-label="Call +91 87654 32109"
+                  >
+                    +91 87654 32109
+                  </a>
                 </div>
               </div>
             </div>
