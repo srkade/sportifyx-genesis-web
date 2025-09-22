@@ -1,7 +1,20 @@
 import { Trophy, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import PolicyModal from './PolicyModal';
+import { privacyPolicyContent, termsOfServiceContent, refundPolicyContent } from '@/data/policies';
 
 const Footer = () => {
+  const [activeModal, setActiveModal] = useState<string | null>(null);
+
+  const openModal = (modalType: string) => {
+    setActiveModal(modalType);
+  };
+
+  const closeModal = () => {
+    setActiveModal(null);
+  };
+
   const quickLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About Us', href: '#about' },
@@ -153,20 +166,51 @@ const Footer = () => {
             <p>
               © 2024 SportifyX. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-background/80 transition-colors">
+            <div className="flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-0">
+              <button 
+                onClick={() => openModal('privacy')}
+                className="hover:text-background/80 transition-colors text-left"
+              >
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-background/80 transition-colors">
+              </button>
+              <button 
+                onClick={() => openModal('terms')}
+                className="hover:text-background/80 transition-colors text-left"
+              >
                 Terms of Service
-              </a>
-              <a href="#" className="hover:text-background/80 transition-colors">
-                Cookie Policy
-              </a>
+              </button>
+              <button 
+                onClick={() => openModal('refund')}
+                className="hover:text-background/80 transition-colors text-left"
+              >
+                Refund & Cancellation Policy
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Policy Modals */}
+      <PolicyModal
+        isOpen={activeModal === 'privacy'}
+        onClose={closeModal}
+        title="Privacy Policy"
+        content={privacyPolicyContent}
+      />
+      
+      <PolicyModal
+        isOpen={activeModal === 'terms'}
+        onClose={closeModal}
+        title="Terms of Service"
+        content={termsOfServiceContent}
+      />
+      
+      <PolicyModal
+        isOpen={activeModal === 'refund'}
+        onClose={closeModal}
+        title="Refund & Cancellation Policy"
+        content={refundPolicyContent}
+      />
     </footer>
   );
 };
