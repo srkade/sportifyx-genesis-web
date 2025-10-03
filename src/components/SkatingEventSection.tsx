@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { Calendar, MapPin, Clock, Users } from 'lucide-react';
+import { Calendar, MapPin, Clock } from 'lucide-react';
 import skatingHero from '@/assets/skating-event-hero.jpg';
 
 const SkatingEventSection = () => {
@@ -23,23 +23,42 @@ const SkatingEventSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
+          {/* Association Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-primary-glow font-semibold mb-4 text-lg"
+          >
+            🌟 In Association with Skating Association of Maharashtra & Pune 🌟
+          </motion.div>
+
           {/* Main Headline */}
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
           >
-            State Level Skating Competition
+            SportifyX State Level Skating Championship – 2025
           </motion.h1>
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-xl md:text-2xl text-primary-glow font-semibold mb-8"
+            className="text-2xl md:text-3xl text-primary-glow font-bold mb-2"
           >
-            12 Oct 2025
+            🏆 Where Speed Meets Spirit, and Champions are Born! 🏆
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.35 }}
+            className="text-xl md:text-2xl text-white font-semibold mb-8"
+          >
+            12th October 2025
           </motion.div>
           
           {/* Description */}
@@ -47,10 +66,41 @@ const SkatingEventSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            SportifyX Sports & Events Pvt. Ltd. is hosting a state-level skating competition to promote athletic excellence and youth fitness. Expected 600–1,000 participants. Full supervision, medical support, and venue safety protocols ensured.
+            🔥 Lace up, roll out, and own the rink! Whether you're racing for gold or cheering for your star — this is the event you can't miss.
           </motion.p>
+
+          {/* Age Categories */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.45 }}
+            className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mb-8 max-w-2xl mx-auto"
+          >
+            <h3 className="text-white font-bold text-xl mb-4">⛸ Age Categories:</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-white/90">
+              <div className="text-center">✨ Under 6 Years</div>
+              <div className="text-center">✨ 6 – 8 Years</div>
+              <div className="text-center">✨ 8 – 10 Years</div>
+              <div className="text-center">✨ 10 – 12 Years</div>
+              <div className="text-center">✨ 12 – 15 Years</div>
+              <div className="text-center">✨ 15 Years & Above</div>
+            </div>
+          </motion.div>
+
+          {/* Participation Benefits */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.47 }}
+            className="bg-gradient-to-r from-primary/20 to-primary-glow/20 backdrop-blur-md rounded-2xl p-6 border border-primary/30 mb-12 max-w-2xl mx-auto"
+          >
+            <p className="text-white/90 text-lg text-center">
+              🎁 Every participant gets a <span className="text-primary-glow font-bold">T-shirt & Participation Certificate!</span>
+            </p>
+            <p className="text-white/80 text-center mt-2">Because every effort deserves recognition. 🙌</p>
+          </motion.div>
           
           {/* Event Details Grid */}
           <motion.div
@@ -65,8 +115,8 @@ const SkatingEventSection = () => {
                 <Calendar className="text-primary-glow" size={24} />
                 <h3 className="text-white font-semibold text-lg">Date & Time</h3>
               </div>
-              <p className="text-white/90">Sunday, 12 Oct 2025</p>
-              <p className="text-primary-glow font-medium">9 AM – 6 PM</p>
+              <p className="text-white/90">Sunday, 12th October 2025</p>
+              <p className="text-primary-glow font-medium">8 AM – 6 PM</p>
             </div>
             
             {/* Venue Card */}
@@ -75,18 +125,8 @@ const SkatingEventSection = () => {
                 <MapPin className="text-primary-glow" size={24} />
                 <h3 className="text-white font-semibold text-lg">Venue</h3>
               </div>
-              <p className="text-white/90">Viman Nagar Roller Skating Rink</p>
-              <p className="text-white/80 text-sm">Sakore Nagar, Viman Nagar, Pune, MH – 411014</p>
-            </div>
-            
-            {/* Participants Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 shadow-xl">
-              <div className="flex items-center gap-3 mb-3">
-                <Users className="text-primary-glow" size={24} />
-                <h3 className="text-white font-semibold text-lg">Expected</h3>
-              </div>
-              <p className="text-primary-glow font-medium text-xl">600 - 1,000</p>
-              <p className="text-white/90">Participants</p>
+              <p className="text-white/90">Viman Nagar Skating Rink</p>
+              <p className="text-white/80 text-sm">Pune, Maharashtra</p>
             </div>
             
             {/* Duration Card */}
@@ -95,7 +135,7 @@ const SkatingEventSection = () => {
                 <Clock className="text-primary-glow" size={24} />
                 <h3 className="text-white font-semibold text-lg">Duration</h3>
               </div>
-              <p className="text-primary-glow font-medium text-xl">9 Hours</p>
+              <p className="text-primary-glow font-medium text-xl">10 Hours</p>
               <p className="text-white/90">Full Day Event</p>
             </div>
           </motion.div>
@@ -105,14 +145,25 @@ const SkatingEventSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-center"
           >
+            <p className="text-white/90 text-lg mb-4">
+              🎯 Limited slots available! Don't miss your chance to be part of history.
+            </p>
             <Button 
               variant="sport" 
               size="xl" 
               className="text-xl px-12 py-6 font-bold transform hover:scale-110 transition-all duration-300"
+              asChild
             >
-              Register Now
+              <a href="https://sportifyx.in" target="_blank" rel="noopener noreferrer">
+                Register NOW
+              </a>
             </Button>
+            <p className="text-white/80 text-sm mt-4">
+              📸 Trophies, cheers, and unforgettable moments await.<br />
+              Let's roll into glory – the SportifyX way!
+            </p>
           </motion.div>
         </motion.div>
       </div>
